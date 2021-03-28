@@ -5,7 +5,8 @@ const DB = process.env.MONGODB_URI || 'mongodb://localhost:27017/db';
 mongoose.connect(DB,{
     useNewUrlParser: true,
     useCreateIndex: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: false
     
 });
 
